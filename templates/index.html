@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Of The Day</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 30px;
+            margin-top: 0;
+        }
+        .media img {
+            height: 80%;
+            width: 80%;
+            filter: invert(100%);
+
+        }
+        :root {
+            filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+    <center><u><h1>Photo Of The Day</h1></u></center><br>
+    <center><h3>{{title}}</h3></center>
+    <div class="media">
+        <center><img src="{{img_url}}" alt="Image"></center>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <p>Credits: {{photographer}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date: {{date}}</p>
+    <p>{{explanation}}</p>
+
+    
+
+</body>
+</html>
