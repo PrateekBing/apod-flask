@@ -1,15 +1,24 @@
 from flask import Flask, render_template,request
 import requests
+from datetime import date, timedelta, datetime
+
 
 
 app = Flask(__name__)
 
-URL = 'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY'
+today = date.today()
+DD = timedelta(days=1)
+yesterday = today-DD
+
+
+
+
+URL = f'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date={yesterday}'
 r = requests.get(url = URL)
 data = r.json()
 explanation = data['explanation']
-date = data['date']
 photographer = data['copyright']
+date = data['date']
 title = data['title']
 img_url = data['hdurl']
 
