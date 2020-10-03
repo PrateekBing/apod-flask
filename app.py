@@ -10,10 +10,10 @@ today = date.today()
 DD = timedelta(days=1)
 yesterday = today-DD
 
+api_key = 'YOUR-API-KEY'
 
 
-
-URL = f'https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date={yesterday}'
+URL = f'https://api.nasa.gov/planetary/apod?api_key={api_key}&date={yesterday}'
 r = requests.get(url = URL)
 data = r.json()
 explanation = data['explanation']

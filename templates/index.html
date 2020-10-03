@@ -9,7 +9,9 @@
         body {
             margin: 30px;
             margin-top: 0;
+
         }
+
         .media img {
             height: 80%;
             width: 80%;
@@ -22,6 +24,7 @@
     </style>
 </head>
 <body>
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -38,6 +41,7 @@
           </ul>
         </div>
       </nav>
+    </header>
 
 
 
@@ -47,11 +51,15 @@
     <center><u><h1>Photo Of The Day</h1></u></center><br>
     <center><h3>{{title}}</h3></center>
     <div class="media">
-        <center><img src="{{img_url}}" alt="Image"></center>
+        <center><img src="{{img_url}}" alt="apod-image"></center>
     </div>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <p>Credits: {{photographer}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date: {{date}}</p>
     <p>{{explanation}}</p>
+
+    
+     
+    
 
     
 
