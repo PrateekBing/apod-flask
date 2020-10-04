@@ -10,7 +10,7 @@ today = date.today()
 DD = timedelta(days=1)
 yesterday = today-DD
 
-api_key = 'LkTRbzh08wc2q7mEDm80MzWV2fsmQq1hWDDvgkq1'
+api_key = 'DEMO_KEY'
 
 
 URL = f'https://api.nasa.gov/planetary/apod?api_key={api_key}&date={yesterday}'
