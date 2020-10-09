@@ -3,7 +3,6 @@ import requests
 from datetime import date, timedelta, datetime
 
 
-
 app = Flask(__name__)
 
 today = date.today()
@@ -26,4 +25,3 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
-    
